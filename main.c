@@ -4,11 +4,15 @@
 void imprime_histograma(int* vendas[], int num_categorias) {
     for (int i = 0; i < num_categorias; i++) {
         printf("%d ", *vendas[i]);
-        for (int j = 0; j < *vendas[i]; j++) {
-            printf("*");
+        if (*vendas[i] == 0) {
+            printf("vazio");
+        } else {
+            for (int j = 0; j < *vendas[i]; j++) {
+                printf("*");
+            }
         }
         if (i < num_categorias - 1) {
-            printf("\\n");
+            printf("\\n"); 
         }
     }
 }
