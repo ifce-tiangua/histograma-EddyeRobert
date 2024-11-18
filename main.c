@@ -8,7 +8,7 @@ void imprime_histograma(int* vendas[], int num_categorias) {
             printf("*");
         }
         if (i < num_categorias - 1) {
-            printf("//n");
+            printf("\\n");
         }
     }
 }
